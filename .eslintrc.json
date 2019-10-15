@@ -1,0 +1,79 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "prettier",
+    "prettier/react"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "prettier",
+    "markdown"
+  ],
+  "rules": {
+    "comma-dangle": [
+      "error",
+      "only-multiline"
+    ],
+    "no-console": "warn",
+    "import/extensions": [
+      "error",
+      { "js": "never" }
+    ],
+    "no-bitwise": [
+      "error",
+      { "allow": [ "|" ] }
+    ],
+    "no-mixed-operators": [
+      "error",
+      {
+        "groups": [
+          [ "&", "|", "^", "~", "<<", ">>", ">>>" ],
+          [ "==", "!=", "===", "!==", ">", ">=", "<", "<=" ],
+          [ "&&", "||" ],
+          [ "in", "instanceof" ]
+        ],
+        "allowSamePrecedence": true
+      }
+    ],
+    "arrow-body-style": [ "error", "as-needed" ],
+    "no-return-assign": [ "error", "except-parens" ],
+    "arrow-parens": [ "error", "as-needed" ],
+    "no-shadow": [
+      "error",
+      { "allow": [ "err" ] }
+    ],
+    "react/jsx-filename-extension": [
+      "warn",
+      { "extensions": [ ".js", ".jsx" ] }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "arrowParens": "avoid",
+        "endOfLine": "lf"
+      }
+    ]
+  }
+}
