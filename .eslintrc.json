@@ -60,6 +60,7 @@
       "error",
       { "allow": [ "err" ] }
     ],
+    "no-nested-ternary": "off",
     "react/jsx-filename-extension": [
       "warn",
       { "extensions": [ ".js", ".jsx" ] }
